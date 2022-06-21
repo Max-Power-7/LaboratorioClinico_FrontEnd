@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 
 import { AppComponent } from './app.component';
+<<<<<<< HEAD
 import { MainHeaderComponent } from './components/main-header/main-header.component';
 import { MainSidebarComponent } from './components/main-sidebar/main-sidebar.component';
 
@@ -23,6 +24,22 @@ import { ListarPacienteComponent } from './components/listar-paciente/listar-pac
 import { ReactiveFormsModule } from '@angular/forms';
 
 import {HttpClientModule} from '@angular/common/http';
+=======
+import { MainHeaderComponent } from './main-header/main-header.component';
+import { MainSidebarComponent } from './main-sidebar/main-sidebar.component';
+import { ContentWrapperComponent } from './content-wrapper/content-wrapper.component';
+import { ControlSidebarComponent } from './control-sidebar/control-sidebar.component';
+import { MainFooterComponent } from './main-footer/main-footer.component';
+import { AppRoutingModule } from './app-routing.module';
+
+// Componentes de Leonel
+import { ListarOrdenComponent } from './components/listar-orden/listar-orden.component';
+import { CrearOrdenComponent } from './components/crear-orden/crear-orden.component';
+
+// Componentes de Jean Paul
+import { ServiciosSaludComponent } from './components/servicios-salud/servicios-salud.component';
+import { LaboratoristaComponent } from './components/laboratorista/laboratorista.component';
+>>>>>>> dev
 
 @NgModule({
   declarations: [
@@ -35,7 +52,9 @@ import {HttpClientModule} from '@angular/common/http';
     CrearPacienteComponent,
     ListarPacienteComponent,
     ListarOrdenComponent,
-    CrearOrdenComponent
+    CrearOrdenComponent,
+    ServiciosSaludComponent,
+    LaboratoristaComponent
   ],
   imports: [
     BrowserModule,
