@@ -6,7 +6,7 @@
                 <div class="card-body text-center">
                     <span class="titulo">Listado de Pacientes</span>
                     <button routerLink="/crear-paciente" class="btn btn-success float-end" >Nuevo</button>
-                    <table class="table table-striped mt-6">
+                    <table *ngIf="listPaciente.length > 0" class="table table-striped mt-6">
                         <thead>
                           <tr>
                             <th scope="col">Nombre</th>
@@ -20,50 +20,25 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <td>Luis Beltran</td>
-                            <td>Condori</td>
-                            <td>Cano</td>
-                            <td>07/04/1984</td>
-                            <td>37</td>
-                            <td>Masculino</td>
-                            <td>Calle Mangales</td>
+                          <tr *ngFor = "let paciente of listPaciente">
+                            <td>{{paciente.carnet}}</td>
+                            <td>{{paciente.nombre}}</td>
+                            <td>{{paciente.paterno}}</td>
+                            <td>{{paciente.materno}}</td>
+                            <td>{{paciente.fechanacimiento}}</td>
+                            <td>{{paciente.edad}}</td>
+                            <td>{{paciente.sexo}}</td>
+                            <td>{{paciente.direccion}}</td>
                             <td>
-                                <i class="fa-solid fa-pen-to-square text-primary"></i>
-                                <i class="fa-solid fa-trash text-danger"></i>
+                                <i [routerLink]="['/editar-paciente', paciente._id]" class="fa-solid fa-pen-to-square text-primary"></i>
+                                <i (click)="eliminarPaciente(paciente._id)" class="fa-solid fa-trash text-danger"></i>
                                 
                             </td>
                           </tr>
-                          <tr>
-                            <td>Luis Fernando</td>
-                            <td>Guardia</td>
-                            <td>Cano</td>
-                            <td>07/04/1984</td>
-                            <td>37</td>
-                            <td>Masculino</td>
-                            <td>Calle Mangales</td>
-                            <td>
-                                <i class="fa-solid fa-pen-to-square text-primary"></i>
-                                <i class="fa-solid fa-trash text-danger"></i>
-                                
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Aracely</td>
-                            <td>Condori</td>
-                            <td>Guardia</td>
-                            <td>07/04/1984</td>
-                            <td>37</td>
-                            <td>Masculino</td>
-                            <td>Calle Mangales</td>
-                            <td>
-                                <i class="fa-solid fa-pen-to-square text-primary"></i>
-                                <i class="fa-solid fa-trash text-danger"></i>
-                                
-                            </td>
-                          </tr>
+                          
                         </tbody>
                       </table>
+                      <h5 style ="text-align: start; margin-top: 10px" *ngIf="listPaciente.length == 0">No hay pacientes para mostrar</h5>
                 </div>
             </div>
         </div>

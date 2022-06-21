@@ -22,6 +22,8 @@ import { CrearPacienteComponent } from './components/crear-paciente/crear-pacien
 import { ListarPacienteComponent } from './components/listar-paciente/listar-paciente.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import {HttpClientModule} from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +44,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

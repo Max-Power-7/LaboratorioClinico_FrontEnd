@@ -3,7 +3,7 @@
         <div class="col-lg6 offset-lg-3">
             <div class="card">
                 <div class="card-body text-center">
-                    <span class="titulo"> Crear Paciente</span>
+                    <span class="titulo"> {{titulo | uppercase}}</span>
                         <form class="mt-3" [formGroup]="pacienteForm" (ngSubmit)="agregarPaciente()">
                             <div class="mb-3">
                                 <input type="text" formControlName= "carnet" class="form-control form-control-lg" placeholder="Carnet">
