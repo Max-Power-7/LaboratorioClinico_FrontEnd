@@ -16,6 +16,7 @@ import { CrearOrdenComponent } from './components/crear-orden/crear-orden.compon
 // Componentes de Jean Paul
 import { ServiciosSaludComponent } from './components/servicios-salud/servicios-salud.component';
 import { LaboratoristaComponent } from './components/laboratorista/laboratorista.component';
+import { NotFound404Component } from './components/not-found404/not-found404.component';
 
 @NgModule({
   declarations: [
@@ -28,12 +29,12 @@ import { LaboratoristaComponent } from './components/laboratorista/laboratorista
     ListarOrdenComponent,
     CrearOrdenComponent,
     ServiciosSaludComponent,
-    LaboratoristaComponent
+    LaboratoristaComponent,
+    NotFound404Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-
   ],
   providers: [],
   bootstrap: [AppComponent]
