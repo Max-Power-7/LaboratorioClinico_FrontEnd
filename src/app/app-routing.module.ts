@@ -2,13 +2,10 @@ import{NgModule} from '@angular/core';
 import{Routes, RouterModule} from '@angular/router';
 
 import { ListarOrdenComponent } from './components/listar-orden/listar-orden.component';
-<<<<<<< HEAD
 import { CrearPacienteComponent } from './components/crear-paciente/crear-paciente.component';
 import { ListarPacienteComponent} from './components/listar-paciente/listar-paciente.component'
-=======
 import { LaboratoristaComponent } from './components/laboratorista/laboratorista.component';
 import { ServiciosSaludComponent } from './components/servicios-salud/servicios-salud.component';
->>>>>>> dev
 
 import { ContentWrapperComponent } from './components/content-wrapper/content-wrapper.component';
 import { ControlSidebarComponent } from './components/control-sidebar/control-sidebar.component';
@@ -18,33 +15,23 @@ import { MainSidebarComponent } from './components/main-sidebar/main-sidebar.com
 import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
-<<<<<<< HEAD
 
     {path: 'listar-paciente', component:ListarPacienteComponent},
     {path: 'orden', component: ListarOrdenComponent },
     {path: 'crear-paciente', component:CrearPacienteComponent},
     {path: 'editar-paciente/:id', component:CrearPacienteComponent},
     {path: '**', redirectTo: '', pathMatch: 'full'},
+    { path: 'laboratorista', component: LaboratoristaComponent },
+    { path: 'servicios', component: ServiciosSaludComponent },
+   
     
 ];
 
 @NgModule({
     declarations:[],
-    
     imports: [CommonModule,RouterModule.forRoot(routes)],
     exports: [RouterModule],
     
-=======
-  { path: 'laboratorista', component: LaboratoristaComponent },
-  { path: 'servicios', component: ServiciosSaludComponent },
-  { path: 'orden', component: ListarOrdenComponent },
-];
-
-@NgModule({
-  declarations: [],
-  imports: [CommonModule, RouterModule.forRoot(routes)],
-  exports: [RouterModule]
->>>>>>> dev
 })
 
 export class AppRoutingModule{}
