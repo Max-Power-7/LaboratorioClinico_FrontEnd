@@ -19,7 +19,7 @@ import { MainFooterComponent } from './main-footer/main-footer.component';
   ],
   imports: [
     BrowserModule,
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
