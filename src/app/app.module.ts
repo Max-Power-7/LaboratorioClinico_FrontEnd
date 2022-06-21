@@ -13,6 +13,9 @@ import { ControlSidebarComponent } from './components/control-sidebar/control-si
 import { MainFooterComponent } from './components/main-footer/main-footer.component';
 import { CrearPacienteComponent } from './components/crear-paciente/crear-paciente.component';
 import { ListarPacienteComponent } from './components/listar-paciente/listar-paciente.component';
+import { ListarOrdenComponent } from './components/listar-orden/listar-orden.component';
+import { CrearOrdenComponent } from './components/crear-orden/crear-orden.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -23,11 +26,14 @@ import { ListarPacienteComponent } from './components/listar-paciente/listar-pac
     ControlSidebarComponent,
     MainFooterComponent,
     CrearPacienteComponent,
-    ListarPacienteComponent
+    ListarPacienteComponent,
+    ListarOrdenComponent,
+    CrearOrdenComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule
+    RouterModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
