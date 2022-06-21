@@ -1,7 +1,7 @@
 import{NgModule} from '@angular/core';
 import{Routes, RouterModule} from '@angular/router';
 
-
+import { ListarOrdenComponent } from './components/listar-orden/listar-orden.component';
 import { CrearPacienteComponent } from './components/crear-paciente/crear-paciente.component';
 import { ListarPacienteComponent} from './components/listar-paciente/listar-paciente.component'
 
@@ -14,17 +14,20 @@ import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
 
-    {path: '', component:ListarPacienteComponent},
-    {path:'crear-paciente', component:CrearPacienteComponent},
-    {path:'editar-paciente/:id', component:CrearPacienteComponent},
-    {path:'**', redirectTo: '', pathMatch: 'full'}
+    {path: 'listar-paciente', component:ListarPacienteComponent},
+    {path: 'orden', component: ListarOrdenComponent },
+    {path: 'crear-paciente', component:CrearPacienteComponent},
+    {path: 'editar-paciente/:id', component:CrearPacienteComponent},
+    {path: '**', redirectTo: '', pathMatch: 'full'},
+    
 ];
 
 @NgModule({
     declarations:[],
-    imports: [RouterModule.forRoot(routes)],
+    
     imports: [CommonModule,RouterModule.forRoot(routes)],
     exports: [RouterModule],
+    
 })
 
 export class AppRoutingModule{}
