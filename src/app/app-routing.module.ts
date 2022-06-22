@@ -21,9 +21,9 @@ const routes: Routes = [
   { path: 'orden', component: ListarOrdenComponent },
   { path: 'crear-paciente', component: CrearPacienteComponent },
   { path: 'editar-paciente/:id', component: CrearPacienteComponent },
-  { path: '**', redirectTo: '', pathMatch: 'full' },
   { path: 'laboratorista', component: LaboratoristaComponent },
   { path: 'servicios', component: ServiciosSaludComponent },
+  { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
 @NgModule({
