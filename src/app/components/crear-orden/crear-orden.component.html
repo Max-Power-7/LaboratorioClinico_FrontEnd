@@ -1,1 +1,315 @@
-<p>crear-orden works!</p>
+<div class="content-wrapper">
+  <div class="card">
+    <div class="card container bg-white">
+      <div class="row shadow">
+        <div class="col">
+          <img
+            src="http://creadictivo.com/wp-content/uploads/2018/05/Escudo-de-Bolivia-Nuevo.jpg"
+            width="150"
+            class=""
+            alt=""
+          />
+        </div>
+        <div class="col text-center">
+          <h2 class="fw-bold">SOLICITUD DE EXAMEN DE</h2>
+          <h2 class="fw-bold">LABORATORIO,IMAGENOLOGIA/GABINETE</h2>
+          <h2 class="fw-bold">O SERVICIOS DE SANGRE</h2>
+        </div>
+        <div class="col">
+          <img
+            src="https://es.news-front.info/wp-content/uploads/2019/03/Bolivia-salud-SUS.jpg"
+            width="200"
+            class=""
+            alt=""
+          />
+        </div>
+      </div>
+      <br />
+      <div class="container">
+        <div class="form-group">
+          <div class="row mb-3">
+            <div class="col">
+              <div class="input-group input-group-lg">
+                <span class="input-group-text">Red</span>
+                <select name="red_id" id="red_id" class="form-control bg-white">
+                  <option value="red->id}}">red->nombre}}</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="input-group input-group-lg">
+                <span class="input-group-text">Municipio</span>
+                <select
+                  name="municipio_id"
+                  id="municipio_id"
+                  class="form-control bg-white"
+                >
+                  <option value="municipio->id}}">municipio->nombre}}</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              <div class="input-group input-group-lg">
+                <span class="input-group-text" for="">Establecimiento</span>
+                <select
+                  name="establecimiento_id"
+                  id="establecimiento_id"
+                  class="form-control bg-white"
+                >
+                  <option value="establecimiento->id}}">
+                    establecimiento->nombre}}
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="input-group input-group-lg">
+                <span class="input-group-text">Fecha de solicitud</span>
+                <input
+                  type="text"
+                  name="fecha_solicitud"
+                  id="fecha_solicitud"
+                  class="form-control bg-white"
+                  value="mytime}}"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              <div class="input-group input-group-lg">
+                <span class="input-group-text">Nro Registro</span>
+                <input
+                  type="text"
+                  name="numero_registro"
+                  id="numero_registro"
+                  class="form-control bg-white"
+                  size="40"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="input-group input-group-lg">
+                <span class="input-group-text">Edad</span>
+                <input
+                  type="text"
+                  name="edad"
+                  id="edad"
+                  class="form-control bg-white"
+                  size="12"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="input-group input-group-lg">
+                <span class="input-group-text">Sexo</span>
+                <input
+                  type="text"
+                  name="sexo"
+                  id="sexo"
+                  class="form-control bg-white"
+                  size="12"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              <div class="input-group input-group-lg">
+                <span class="input-group-text">Paciente</span>
+                <select
+                  name="paciente_id"
+                  id="paciente_id"
+                  class="form-control bg-white"
+                >
+                  <option value=" paciente->id}}">
+                    Carnet: paciente->ci}}, Nombre:paciente->nombre}}
+                    paciente->paterno}} paciente->materno}}, Edad:
+                    paciente->edad}}, Sexo: paciente->sexo}}
+                  </option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="input-group input-group-lg">
+                <span class="input-group-text">Celula Identidad</span>
+                <input
+                  type="text"
+                  name="ci"
+                  id="ci"
+                  class="form-control bg-white"
+                  size="40"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              <div class="input-group input-group-lg">
+                <span class="input-group-text">medico_id clinico</span>
+                <input
+                  type="text"
+                  name="diagnostico"
+                  id="diagnostico"
+                  class="form-control bg-white"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="input-group input-group-lg">
+                <span class="input-group-text">Medico Solicitante:</span>
+                <select
+                  name="medico_id"
+                  id="medico_id"
+                  class="form-control bg-white"
+                >
+                  <option value="medico->id}}">
+                    medico->nombre}} medico->paterno}} medico->materno}}
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card w-auto">
+        <div class="card-body bg-white">
+          <div class="row container">
+            <label>Servicio a solicitar</label>
+            <br />
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="">HEMATOLOGIA</label>
+              <div class="">
+                <tr *ngFor="let hero of heros; index as i">
+                  <input
+                    type="checkbox"
+                    name="select_process[]"
+                    class="select_process"
+                    value=""
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">{{
+                    hero
+                  }}</label>
+                </tr>
+              </div>
+            </div>
+            <div class="col">
+              <label for="">BACTERIOLOGÍA</label>
+              <div class="">
+                <tr *ngFor="let hero of heros; index as i">
+                  <input
+                    type="checkbox"
+                    name="select_process[]"
+                    class="select_process"
+                    value=""
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">{{
+                    hero
+                  }}</label>
+                </tr>
+              </div>
+            </div>
+            <div class="col">
+              <label for="">INMUNOLOGÍA SANGUÍNEA</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="servicio->nombre}}"
+                  name="analisis[]"
+                  id="flexCheckChecked"
+                />
+                <input
+                  class="form-check-input"
+                  type="hidden"
+                  value="servicio->id}}"
+                  name="analisisId[]"
+                  id="flexCheckChecked"
+                />
+                <label class="form-check-label" for="flexCheckChecked"> </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <label for="">MARCADORES TUMORALES</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="servicio->nombre}}"
+                  name="analisis[]"
+                  id="flexCheckChecked"
+                />
+                <input
+                  class="form-check-input"
+                  type="hidden"
+                  value="servicio->id}}"
+                  name="analisisId[]"
+                  id="flexCheckChecked"
+                />
+                <label class="form-check-label" for="flexCheckChecked"> </label>
+              </div>
+            </div>
+            <div class="col">
+              <label for="">PARASITOLOGÍA</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="servicio->nombre}}"
+                  name="analisis[]"
+                  id="flexCheckChecked"
+                />
+                <input
+                  class="form-check-input"
+                  type="hidden"
+                  value="servicio->id}}"
+                  name="analisisId[]"
+                  id="flexCheckChecked"
+                />
+                <label class="form-check-label" for="flexCheckChecked"> </label>
+              </div>
+            </div>
+            <div class="col">
+              <label for="">PERFIL HORMONAL</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="servicio->nombre}}"
+                  name="analisis[]"
+                  id="flexCheckChecked"
+                />
+                <input
+                  class="form-check-input"
+                  type="hidden"
+                  value="servicio->id}}"
+                  name="analisisId[]"
+                  id="flexCheckChecked"
+                />
+                <label class="form-check-label" for="flexCheckChecked"> </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <input
+        type="submit"
+        value="Guardar orden"
+        id="guar"
+        class="btn btn-success"
+      />
+
+      <button type="submit" class="btn btn-primary">Guardar Todo</button>
+    </div>
+  </div>
+</div>
