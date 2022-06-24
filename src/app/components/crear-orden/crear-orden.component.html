@@ -125,11 +125,8 @@
                   id="paciente_id"
                   class="form-control bg-white"
                 >
-                  <option value=" paciente->id}}">
-                    Carnet: paciente->ci}}, Nombre:paciente->nombre}}
-                    paciente->paterno}} paciente->materno}}, Edad:
-                    paciente->edad}}, Sexo: paciente->sexo}}
-                  </option>
+                  <option value=""*ngFor="let paciente of pacientes; index as i">
+{{paciente.nombre}}    {{paciente.paterno}}                  </option>
                 </select>
               </div>
             </div>
@@ -186,17 +183,19 @@
           <div class="row">
             <div class="col">
               <label for="">HEMATOLOGIA</label>
-              <div class="">
+              <div class="" >
                 <tr *ngFor="let hero of heros; index as i">
+                  <div class="form-check"*ngIf="hero.tipo == 'HEMATOLOGIA'">                 
                   <input
                     type="checkbox"
                     name="select_process[]"
                     class="select_process"
                     value=""
-                  />
-                  <label class="form-check-label" for="flexCheckChecked">{{
-                    hero
+                    *ngIf="hero.tipo == 'HEMATOLOGIA'"/>
+                  <label class="form-check-label" for="flexCheckChecked" >{{
+                    hero.nombre
                   }}</label>
+                  </div>
                 </tr>
               </div>
             </div>
@@ -204,15 +203,17 @@
               <label for="">BACTERIOLOGÍA</label>
               <div class="">
                 <tr *ngFor="let hero of heros; index as i">
-                  <input
-                    type="checkbox"
-                    name="select_process[]"
-                    class="select_process"
-                    value=""
-                  />
-                  <label class="form-check-label" for="flexCheckChecked">{{
-                    hero
-                  }}</label>
+                  <div class="form-check"*ngIf="hero.tipo == 'BACTERIOLOGÍA'">                 
+                    <input
+                      type="checkbox"
+                      name="select_process[]"
+                      class="select_process"
+                      value=""
+                      />
+                    <label class="form-check-label" for="flexCheckChecked" >{{
+                      hero.nombre
+                    }}</label>
+                    </div>
                 </tr>
               </div>
             </div>

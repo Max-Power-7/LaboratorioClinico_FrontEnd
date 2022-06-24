@@ -1,15 +1,9 @@
-<div class="container-fluid">
-    <div class="row mb-2">
-      <div class="col-sm-6">
-        <h1 class="m-0">Prueba2</h1>
-      </div><!-- /.col -->
-      <div class="col-sm-6">
-      *Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere harum accusantium totam suscipit nulla culpa tempore labore voluptatum porro, sapiente repellat, ratione consectetur, laborum illo deleniti commodi! Ab, vitae.
-      </div><!-- /.col -->
-    </div><!-- /.row -->
-  </div><!-- /.container-fluid -->
-<div class="card">
+<div class="content-wrapper">
+<div class="card bg-white">
     <div class="card-body">
+        <span class="titulo">Listado de Orden Laboratorio</span>
+        <button routerLink="/crear-orden" class="btn btn-success float-end" >Nuevo</button>
+       
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -22,9 +16,9 @@
                 </tr>
             </thead>
             <tbody>
-                    <tr>
+                    <tr >
                         <td>1</td>
-                        <td>paciente($orden->paciente_id)->nombre
+                        <td>
                         <br>paciente($orden->paciente_id)->paterno
                         <br>paciente($orden->paciente_id)->materno</td>
                         <td>user(paciente($orden->paciente_id)->user_id)->email</td>
@@ -33,11 +27,12 @@
                         <td>$orden-></td>
                         <td>$orden-></td> 
                         <td width="10px">
-                            <a class="btn btn-success" >Imprimir</a>    
-                            <a class="btn btn-primary" >Mas info</a>
+                            <a class="btn btn-success" ></a>    
+                            <a class="btn btn-primary" ></a>
                         </td>
                     </tr>
             </tbody>
         </table>
     </div>
+</div>
 </div>
