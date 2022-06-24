@@ -1,51 +1,62 @@
-
-  <div class="container mt-6">
-    <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-            <div class="card">
-                <div class="card-body text-center">
-                    <span class="titulo">Listado de Pacientes</span>
-                    <button routerLink="/crear-paciente" class="btn btn-success float-end" >Nuevo</button>
-                    <table *ngIf="listPaciente.length > 0" class="table table-striped mt-6">
-                        <thead>
-                          <tr>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Apellido Paterno</th>
-                            <th scope="col">Apellido Materno</th>
-                            <th scope="col">Fecha de Nacimiento</th>
-                            <th scope="col">Edad</th>
-                            <th scope="col">Sexo</th>
-                            <th scope="col">Direccion</th>
-                            <th scope="col">Accion</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr *ngFor = "let paciente of listPaciente">
-                            <td>{{paciente.carnet}}</td>
-                            <td>{{paciente.nombre}}</td>
-                            <td>{{paciente.paterno}}</td>
-                            <td>{{paciente.materno}}</td>
-                            <td>{{paciente.fechanacimiento}}</td>
-                            <td>{{paciente.edad}}</td>
-                            <td>{{paciente.sexo}}</td>
-                            <td>{{paciente.direccion}}</td>
-                            <td>
-                                <i [routerLink]="['/editar-paciente', paciente._id]" class="fa-solid fa-pen-to-square text-primary"></i>
-                                <i (click)="eliminarPaciente(paciente._id)" class="fa-solid fa-trash text-danger"></i>
-                                
-                            </td>
-                          </tr>
-                          
-                        </tbody>
-                      </table>
-                      <h5 style ="text-align: start; margin-top: 10px" *ngIf="listPaciente.length == 0">No hay pacientes para mostrar</h5>
-                </div>
-            </div>
+<div class="container mt-6">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2">
+      <div class="card">
+        <div class="card-body text-center">
+          <span class="titulo">Listado de Pacientes</span>
+          <button
+            routerLink="/crear-paciente"
+            class="btn btn-success float-end"
+          >
+            Nuevo
+          </button>
+          <table
+            *ngIf="listPaciente.length > 0"
+            class="table table-striped mt-6"
+          >
+            <thead>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido Paterno</th>
+                <th scope="col">Apellido Materno</th>
+                <th scope="col">Fecha de Nacimiento</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Direccion</th>
+                <th scope="col">Accion</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let paciente of listPaciente">
+                <td>{{ paciente.carnet }}</td>
+                <td>{{ paciente.nombre }}</td>
+                <td>{{ paciente.paterno }}</td>
+                <td>{{ paciente.materno }}</td>
+                <td>{{ paciente.fechanacimiento }}</td>
+                <td>{{ paciente.edad }}</td>
+                <td>{{ paciente.sexo }}</td>
+                <td>{{ paciente.direccion }}</td>
+                <td>
+                  <i
+                    [routerLink]="['/editar-paciente', paciente._id]"
+                    class="fa-solid fa-pen-to-square text-primary"
+                  ></i>
+                  <i
+                    (click)="eliminarPaciente(paciente._id)"
+                    class="fa-solid fa-trash text-danger"
+                  ></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h5
+            style="text-align: start; margin-top: 10px"
+            *ngIf="listPaciente.length == 0"
+          >
+            No hay pacientes para mostrar
+          </h5>
         </div>
+      </div>
     </div>
+  </div>
 </div>
-
-
-
-
-

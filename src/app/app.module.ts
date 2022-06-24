@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import {RouterModule} from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
@@ -21,11 +21,12 @@ import { CrearPacienteComponent } from './components/crear-paciente/crear-pacien
 import { ListarPacienteComponent } from './components/listar-paciente/listar-paciente.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 // Componentes de Jean Paul
 import { ServiciosSaludComponent } from './components/servicios-salud/servicios-salud.component';
 import { LaboratoristaComponent } from './components/laboratorista/laboratorista.component';
+import { NotFound404Component } from './components/not-found404/not-found404.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { LaboratoristaComponent } from './components/laboratorista/laboratorista
     ListarOrdenComponent,
     CrearOrdenComponent,
     ServiciosSaludComponent,
-    LaboratoristaComponent
+    LaboratoristaComponent,
+    NotFound404Component
   ],
   imports: [
     BrowserModule,
