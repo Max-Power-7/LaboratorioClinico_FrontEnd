@@ -24,7 +24,7 @@ const routes: Routes = [
   { path: 'editar-paciente/:id', component: CrearPacienteComponent },
   { path: 'laboratorista', component: LaboratoristaComponent },
   { path: 'servicios', component: ServiciosSaludComponent },
-  { path: '**', redirectTo: '', pathMatch: 'full' },
+  { path: '**', component: NotFound404Component },
 ];
 
 @NgModule({
