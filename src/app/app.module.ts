@@ -16,6 +16,7 @@ import { CrearOrdenComponent } from './components/crear-orden/crear-orden.compon
 // Componentes de Jean Paul
 import { ServiciosSaludComponent } from './components/servicios-salud/servicios-salud.component';
 import { LaboratoristaComponent } from './components/laboratorista/laboratorista.component';
+import { OrdenServicioComponent } from './components/orden-servicio/orden-servicio.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { LaboratoristaComponent } from './components/laboratorista/laboratorista
     ListarOrdenComponent,
     CrearOrdenComponent,
     ServiciosSaludComponent,
-    LaboratoristaComponent
+    LaboratoristaComponent,
+    OrdenServicioComponent
   ],
   imports: [
     BrowserModule,
