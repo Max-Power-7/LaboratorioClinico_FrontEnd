@@ -14,6 +14,7 @@ import { MainFooterComponent } from './main-footer/main-footer.component';
 import { MainHeaderComponent } from './main-header/main-header.component';
 import { MainSidebarComponent } from './main-sidebar/main-sidebar.component';
 import { CommonModule } from '@angular/common';
+import { OrdenServicioComponent } from './components/orden-servicio/orden-servicio.component';
 
 const routes: Routes = [
 
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'laboratorista', component: LaboratoristaComponent },
   { path: 'servicios', component: ServiciosSaludComponent },
   { path: '**', component: NotFound404Component },
+  { path: 'orden-servicio', component: OrdenServicioComponent },
 ];
 
 @NgModule({
