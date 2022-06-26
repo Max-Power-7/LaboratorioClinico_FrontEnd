@@ -30,6 +30,8 @@ import { NotFound404Component } from './components/not-found404/not-found404.com
 
 import { OrdenServicioComponent } from './components/orden-servicio/orden-servicio.component';
 import { InformacionComponent } from './components/informacion/informacion.component';
+import { ExamenComponent } from './components/examen/examen.component';
+import { CrearExamenComponent } from './components/crear-examen/crear-examen.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,9 @@ import { InformacionComponent } from './components/informacion/informacion.compo
     LaboratoristaComponent,
     OrdenServicioComponent,
     NotFound404Component,
-    InformacionComponent
+    InformacionComponent,
+    ExamenComponent,
+    CrearExamenComponent
   ],
   imports: [
     BrowserModule,
