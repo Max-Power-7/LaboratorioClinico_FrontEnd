@@ -9,26 +9,25 @@
                 <tr>
                     <th>ID Orden</th>
                     <th> Nompre Paciente</th>
-                    <th>Email</th>
-                    <th>Medico</th>
+                    <th>EDAD</th>
+                    <th>CI</th>
+                    <th>SERVICIO</th>
                     <th>Fecha</th>
                     <th>Action</th>
                 </tr>
             </thead>
             <tbody>
-                    <tr >
+                    <tr *ngFor="let orden of ordenArray">
                         <td>1</td>
-                        <td>
-                        <br>paciente($orden->paciente_id)->paterno
-                        <br>paciente($orden->paciente_id)->materno</td>
-                        <td>user(paciente($orden->paciente_id)->user_id)->email</td>
-                        <td>Dr(a):medico($orden->medico_id)->nombre</td>
-                        <td>$orden->fecha</td>
-                        <td>$orden-></td>
-                        <td>$orden-></td> 
+                        <td>{{orden.cliente}}</td>
+                        <td>{{orden.edad}}</td>
+                        <td>{{orden.ci}}</td>
+                        <td>{{orden.servicio}}</td>
+                        <td>{{orden.fecha}}</td>
+                        
                         <td width="10px">
-                            <a class="btn btn-success" ></a>    
-                            <a class="btn btn-primary" ></a>
+                            <a class="btn btn-success" >editar</a>    
+                            <a class="btn btn-primary" >eliminar</a>
                         </td>
                     </tr>
             </tbody>

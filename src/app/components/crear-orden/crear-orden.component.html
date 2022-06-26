@@ -25,292 +25,311 @@
         </div>
       </div>
       <br />
-      <div class="container">
-        <div class="form-group">
-          <div class="row mb-3">
-            <div class="col">
-              <div class="input-group input-group-lg">
-                <span class="input-group-text">Red</span>
-                <select name="red_id" id="red_id" class="form-control bg-white">
-                  <option value="red->id}}">red->nombre}}</option>
-                </select>
+      <form>
+        <div class="container">
+          <div class="form-group">
+            <div class="row mb-3">
+              <div class="col">
+                <div class="input-group input-group-lg">
+                  <span class="input-group-text">Red</span>
+                  <select
+                    name="red_id"
+                    id="red_id"
+                    class="form-control bg-white"
+                  >
+                    <option value="red->id}}">red->nombre}}</option>
+                  </select>
+                </div>
               </div>
-            </div>
 
-            <div class="col">
-              <div class="input-group input-group-lg">
-                <span class="input-group-text">Municipio</span>
-                <select
-                  name="municipio_id"
-                  id="municipio_id"
-                  class="form-control bg-white"
-                >
-                  <option value="municipio->id}}">municipio->nombre}}</option>
-                </select>
+              <div class="col">
+                <div class="input-group input-group-lg">
+                  <span class="input-group-text">Municipio</span>
+                  <select
+                    name="municipio_id"
+                    id="municipio_id"
+                    class="form-control bg-white"
+                  >
+                    <option value="municipio->id}}">municipio->nombre}}</option>
+                  </select>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="row mb-3">
-            <div class="col">
-              <div class="input-group input-group-lg">
-                <span class="input-group-text" for="">Establecimiento</span>
-                <select
-                  name="establecimiento_id"
-                  id="establecimiento_id"
-                  class="form-control bg-white"
-                >
-                  <option value="establecimiento->id}}">
-                    establecimiento->nombre}}
-                  </option>
-                </select>
+            <div class="row mb-3">
+              <div class="col">
+                <div class="input-group input-group-lg">
+                  <span class="input-group-text" for="">Establecimiento</span>
+                  <select
+                    name="establecimiento_id"
+                    id="establecimiento_id"
+                    class="form-control bg-white"
+                  >
+                    <option value="establecimiento->id}}">
+                      establecimiento->nombre}}
+                    </option>
+                  </select>
+                </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="input-group input-group-lg">
-                <span class="input-group-text">Fecha de solicitud</span>
-                <input
-                  type="text"
-                  name="fecha_solicitud"
-                  id="fecha_solicitud"
-                  class="form-control bg-white"
-                  value="mytime}}"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="row mb-3">
-            <div class="col">
-              <div class="input-group input-group-lg">
-                <span class="input-group-text">Nro Registro</span>
-                <input
-                  type="text"
-                  name="numero_registro"
-                  id="numero_registro"
-                  class="form-control bg-white"
-                  size="40"
-                />
-              </div>
-            </div>
-            <div class="col">
-              <div class="input-group input-group-lg">
-                <span class="input-group-text">Edad</span>
-                <input
-                  type="text"
-                  name="edad"
-                  id="edad"
-                  class="form-control bg-white"
-                  size="12"
-                />
-              </div>
-            </div>
-            <div class="col">
-              <div class="input-group input-group-lg">
-                <span class="input-group-text">Sexo</span>
-                <input
-                  type="text"
-                  name="sexo"
-                  id="sexo"
-                  class="form-control bg-white"
-                  size="12"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="row mb-3">
-            <div class="col">
-              <div class="input-group input-group-lg">
-                <span class="input-group-text">Paciente</span>
-                <select
-                  name="paciente_id"
-                  id="paciente_id"
-                  class="form-control bg-white"
-                >
-                  <option value=""*ngFor="let paciente of pacientes; index as i">
-{{paciente.nombre}}    {{paciente.paterno}}                  </option>
-                </select>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="input-group input-group-lg">
-                <span class="input-group-text">Celula Identidad</span>
-                <input
-                  type="text"
-                  name="ci"
-                  id="ci"
-                  class="form-control bg-white"
-                  size="40"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="row mb-3">
-            <div class="col">
-              <div class="input-group input-group-lg">
-                <span class="input-group-text">medico_id clinico</span>
-                <input
-                  type="text"
-                  name="diagnostico"
-                  id="diagnostico"
-                  class="form-control bg-white"
-                />
-              </div>
-            </div>
-            <div class="col">
-              <div class="input-group input-group-lg">
-                <span class="input-group-text">Medico Solicitante:</span>
-                <select
-                  name="medico_id"
-                  id="medico_id"
-                  class="form-control bg-white"
-                >
-                  <option value="medico->id}}">
-                    medico->nombre}} medico->paterno}} medico->materno}}
-                  </option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card w-auto">
-        <div class="card-body bg-white">
-          <div class="row container">
-            <label>Servicio a solicitar</label>
-            <br />
-          </div>
-          <div class="row">
-            <div class="col">
-              <label for="">HEMATOLOGIA</label>
-              <div class="" >
-                <tr *ngFor="let hero of heros; index as i">
-                  <div class="form-check"*ngIf="hero.tipo == 'HEMATOLOGIA'">                 
+              <div class="col">
+                <div class="input-group input-group-lg">
+                  <span class="input-group-text">Fecha de solicitud</span>
                   <input
-                    type="checkbox"
-                    name="select_process[]"
-                    class="select_process"
-                    value=""
-                    *ngIf="hero.tipo == 'HEMATOLOGIA'"/>
-                  <label class="form-check-label" for="flexCheckChecked" >{{
-                    hero.nombre
-                  }}</label>
-                  </div>
-                </tr>
+                    type="text"
+                    name="fecha_solicitud"
+                    id="fecha_solicitud"
+                    class="form-control bg-white"
+                    value="mytime}}"
+                  />
+                </div>
               </div>
             </div>
-            <div class="col">
-              <label for="">BACTERIOLOGÍA</label>
-              <div class="">
-                <tr *ngFor="let hero of heros; index as i">
-                  <div class="form-check"*ngIf="hero.tipo == 'BACTERIOLOGÍA'">                 
-                    <input
-                      type="checkbox"
-                      name="select_process[]"
-                      class="select_process"
+            <div class="row mb-3">
+              <div class="col">
+                <div class="input-group input-group-lg">
+                  <span class="input-group-text">Nro Registro</span>
+                  <input
+                    type="text"
+                    name="numero_registro"
+                    id="numero_registro"
+                    class="form-control bg-white"
+                    size="40"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group input-group-lg">
+                  <span class="input-group-text">Edad</span>
+                  <input
+                    type="text"
+                    name="edad"
+                    id="edad"
+                    class="form-control bg-white"
+                    size="12"
+                    placeholder="Edad"
+                    [(ngModel)]="selectOrden"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group input-group-lg">
+                  <span class="input-group-text">Sexo</span>
+                  <input
+                    type="text"
+                    name="sexo"
+                    id="sexo"
+                    class="form-control bg-white"
+                    size="12"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <div class="input-group input-group-lg">
+                  <span class="input-group-text">Paciente</span>
+                  <select
+                    name="paciente_id"
+                    id="paciente_id"
+                    class="form-control bg-white"
+                  >
+                    <option
                       value=""
-                      />
-                    <label class="form-check-label" for="flexCheckChecked" >{{
-                      hero.nombre
-                    }}</label>
-                    </div>
-                </tr>
+                      *ngFor="let paciente of pacientes; index as i"
+                    >
+                      {{ paciente.nombre }} {{ paciente.paterno }}
+                    </option>
+                  </select>
+                </div>
               </div>
-            </div>
-            <div class="col">
-              <label for="">INMUNOLOGÍA SANGUÍNEA</label>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value="servicio->nombre}}"
-                  name="analisis[]"
-                  id="flexCheckChecked"
-                />
-                <input
-                  class="form-check-input"
-                  type="hidden"
-                  value="servicio->id}}"
-                  name="analisisId[]"
-                  id="flexCheckChecked"
-                />
-                <label class="form-check-label" for="flexCheckChecked"> </label>
-              </div>
-            </div>
-          </div>
 
-          <div class="row">
-            <div class="col">
-              <label for="">MARCADORES TUMORALES</label>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value="servicio->nombre}}"
-                  name="analisis[]"
-                  id="flexCheckChecked"
-                />
-                <input
-                  class="form-check-input"
-                  type="hidden"
-                  value="servicio->id}}"
-                  name="analisisId[]"
-                  id="flexCheckChecked"
-                />
-                <label class="form-check-label" for="flexCheckChecked"> </label>
+              <div class="col">
+                <div class="input-group input-group-lg">
+                  <span class="input-group-text">Celula Identidad</span>
+                  <input
+                    type="text"
+                    name="ci"
+                    id="ci"
+                    class="form-control bg-white"
+                    size="40"
+                  />
+                </div>
               </div>
             </div>
-            <div class="col">
-              <label for="">PARASITOLOGÍA</label>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value="servicio->nombre}}"
-                  name="analisis[]"
-                  id="flexCheckChecked"
-                />
-                <input
-                  class="form-check-input"
-                  type="hidden"
-                  value="servicio->id}}"
-                  name="analisisId[]"
-                  id="flexCheckChecked"
-                />
-                <label class="form-check-label" for="flexCheckChecked"> </label>
+            <div class="row mb-3">
+              <div class="col">
+                <div class="input-group input-group-lg">
+                  <span class="input-group-text">medico_id clinico</span>
+                  <input
+                    type="text"
+                    name="diagnostico"
+                    id="diagnostico"
+                    class="form-control bg-white"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="col">
-              <label for="">PERFIL HORMONAL</label>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value="servicio->nombre}}"
-                  name="analisis[]"
-                  id="flexCheckChecked"
-                />
-                <input
-                  class="form-check-input"
-                  type="hidden"
-                  value="servicio->id}}"
-                  name="analisisId[]"
-                  id="flexCheckChecked"
-                />
-                <label class="form-check-label" for="flexCheckChecked"> </label>
+              <div class="col">
+                <div class="input-group input-group-lg">
+                  <span class="input-group-text">Medico Solicitante:</span>
+                  <select
+                    name="medico_id"
+                    id="medico_id"
+                    class="form-control bg-white"
+                  >
+                    <option value="medico->id}}">
+                      medico->nombre}} medico->paterno}} medico->materno}}
+                    </option>
+                  </select>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <input
-        type="submit"
-        value="Guardar orden"
-        id="guar"
-        class="btn btn-success"
-      />
 
-      <button type="submit" class="btn btn-primary">Guardar Todo</button>
+        <div class="card w-auto">
+          <div class="card-body bg-white">
+            <div class="row container">
+              <label>Servicio a solicitar</label>
+              <br />
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="">HEMATOLOGIA</label>
+                <div class="">
+                  <tr *ngFor="let hero of heros; index as i">
+                    <div class="form-check" *ngIf="hero.tipo == 'HEMATOLOGIA'">
+                      <input
+                        type="checkbox"
+                        name="select_process[]"
+                        class="select_process"
+                        value=""
+                        *ngIf="hero.tipo == 'HEMATOLOGIA'"
+                      />
+                      <label class="form-check-label" for="flexCheckChecked">{{
+                        hero.nombre
+                      }}</label>
+                    </div>
+                  </tr>
+                </div>
+              </div>
+              <div class="col">
+                <label for="">BACTERIOLOGÍA</label>
+                <div class="">
+                  <tr *ngFor="let hero of heros; index as i">
+                    <div
+                      class="form-check"
+                      *ngIf="hero.tipo == 'BACTERIOLOGÍA'"
+                    >
+                      <input
+                        type="checkbox"
+                        name="select_process[]"
+                        class="select_process"
+                        value=""
+                      />
+                      <label class="form-check-label" for="flexCheckChecked">{{
+                        hero.nombre
+                      }}</label>
+                    </div>
+                  </tr>
+                </div>
+              </div>
+              <div class="col">
+                <label for="">INMUNOLOGÍA SANGUÍNEA</label>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="servicio->nombre}}"
+                    name="analisis[]"
+                    id="flexCheckChecked"
+                  />
+                  <input
+                    class="form-check-input"
+                    type="hidden"
+                    value="servicio->id}}"
+                    name="analisisId[]"
+                    id="flexCheckChecked"
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label for="">MARCADORES TUMORALES</label>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="servicio->nombre}}"
+                    name="analisis[]"
+                    id="flexCheckChecked"
+                  />
+                  <input
+                    class="form-check-input"
+                    type="hidden"
+                    value="servicio->id}}"
+                    name="analisisId[]"
+                    id="flexCheckChecked"
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">
+                  </label>
+                </div>
+              </div>
+              <div class="col">
+                <label for="">PARASITOLOGÍA</label>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="servicio->nombre}}"
+                    name="analisis[]"
+                    id="flexCheckChecked"
+                  />
+                  <input
+                    class="form-check-input"
+                    type="hidden"
+                    value="servicio->id}}"
+                    name="analisisId[]"
+                    id="flexCheckChecked"
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">
+                  </label>
+                </div>
+              </div>
+              <div class="col">
+                <label for="">PERFIL HORMONAL</label>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="servicio->nombre}}"
+                    name="analisis[]"
+                    id="flexCheckChecked"
+                  />
+                  <input
+                    class="form-check-input"
+                    type="hidden"
+                    value="servicio->id}}"
+                    name="analisisId[]"
+                    id="flexCheckChecked"
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+         
+        <button type="submit" class="btn btn-primary form-control">Guardar</button>
+        <button routerLink="/orden" type="submit" class="btn btn-primary form-control">Cancelar</button>
+        
+      </div>
+      </form>
+   
     </div>
   </div>
 </div>
