@@ -29,6 +29,7 @@ import { LaboratoristaComponent } from './components/laboratorista/laboratorista
 import { NotFound404Component } from './components/not-found404/not-found404.component';
 
 import { OrdenServicioComponent } from './components/orden-servicio/orden-servicio.component';
+import { InformacionComponent } from './components/informacion/informacion.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { OrdenServicioComponent } from './components/orden-servicio/orden-servic
     ServiciosSaludComponent,
     LaboratoristaComponent,
     OrdenServicioComponent,
-    NotFound404Component
+    NotFound404Component,
+    InformacionComponent
   ],
   imports: [
     BrowserModule,

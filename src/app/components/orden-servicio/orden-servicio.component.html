@@ -1,196 +1,148 @@
+<div class="wrapper">
+    <div class="content-wrapper">
 
 
-<div class="content-wrapper">
-
-
-<section class="content">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-
-
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
 
 
 
-                <div class="card">
-                    <div class="card-header">
-                        <h2>Lista de Ordenes de servicio</h2>
-                        <button
-                        routerLink="/crear-paciente"
-                        class="btn btn-primary float-end"
-                      >
-                        Agregar Servicio
-                      </button>
+
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Lista de Ordenes de servicio</h2>
+
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Id</th>
+                                                <th scope="col">Servicio </th>
+                                                <th scope="col"> Paciente</th>
+                                                <th scope="col">Fecha_solicitud</th>
+
+
+                                                <th scope="col"> Accion</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Citoquímico de cualquier fluido (pleural, LCR, peritoneal, etc)</td>
+                                                <td>Pedro Veizaga
+                                                    Cabrera</td>
+                                                <td> 2021/12/03</td>
+
+                                                <td><button type="button" class="btn btn-outline-success"
+                                                        routerLink="/informacion">Informacion</button><button
+                                                        type="button" style="margin-left: 18px;"
+                                                        class="btn btn-outline-danger">Eliminar</button></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Citograma nasal</td>
+                                                <td>Pedro Veizaga
+                                                    Cabrera</td>
+                                                <td> 2021/12/03</td>
+
+                                                <td><button type="button" class="btn btn-outline-success"
+                                                        routerLink="/informacion">Informacion</button><button
+                                                        type="button" style="margin-left: 18px;"
+                                                        class="btn btn-outline-danger">Eliminar</button></td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Estudio morfológico en médula ósea</td>
+                                                <td>Pedro Veizaga
+                                                    Cabrera</td>
+                                                <td>2021/12/03</td>
+
+                                                <td><button type="button" class="btn btn-outline-success"
+                                                        routerLink="/informacion">Informacion</button><button
+                                                        type="button" style="margin-left: 18px;"
+                                                        class="btn btn-outline-danger">Eliminar</button></td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>Citograma nasal</td>
+                                                <td>noemi chana
+                                                    ch</td>
+                                                <td>2022/03/25</td>
+                                                <td><button type="button" class="btn btn-outline-success"
+                                                        routerLink="/informacion">Informacion</button><button
+                                                        type="button" style="margin-left: 18px;"
+                                                        class="btn btn-outline-danger">Eliminar</button></td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>Estudio morfológico en médula ósea</td>
+                                                <td> noemi chana
+                                                    ch</td>
+                                                <td>2022/03/25</td>
+
+
+                                                <td><button type="button" class="btn btn-outline-success"
+                                                        routerLink="/informacion">Informacion</button><button
+                                                        type="button" style="margin-left: 18px;"
+                                                        class="btn btn-outline-danger">Eliminar</button></td>
+
+
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>Citograma nasal</td>
+
+                                                <td>Pedro Veizaga
+                                                    Cabrera</td>
+                                                <td>2022/03/29</td>
+
+                                                <td><button type="button" class="btn btn-outline-success"
+                                                        routerLink="/informacion">Informacion</button><button
+                                                        type="button" style="margin-left: 18px;"
+                                                        class="btn btn-outline-danger">Eliminar</button></td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">7</th>
+                                                <td>Estudio morfológico en meduula osea</td>
+
+                                                <td>Pedro Veizaga
+                                                    Cabrera</td>
+                                                <td>2022/03/29</td>
+
+                                                <td><button type="button" class="btn btn-outline-success"
+                                                        routerLink="/informacion">Informacion</button><button
+                                                        type="button" style="margin-left: 18px;"
+                                                        class="btn btn-outline-danger">Eliminar</button></td>
+
+
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="card-body">
-                        <div class="table-responsive">
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Id</th>
-                                    <th scope="col">Nombre de servicio </th>
-                                    <th scope="col"> Precio</th>
-                                    <th scope="col">Nivel</th>
 
-                                    <th scope="col"> Financiamiento</th>
-                                    <th scope="col"> Tipo</th>
-                                    <th scope="col"> </th>
-
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Citoquímico de cualquier fluido (pleural, LCR, peritoneal, etc)</td>
-                                    <td>30.00</td>
-                                    <td>	II y III Nivel</td>
-                                    <td>	SUS</td>
-                                    <td>ANÁLISIS DE OTROS FLUIDOS CORPORALES
-                                    </td>
-                                    <td><button type="button" class="btn btn-outline-primary">Editar</button><button
-                                            type="button" style="margin-left: 18px;"
-                                            class="btn btn-outline-danger">Eliminar</button></td>
-
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Estudio anatomopatológico de cualquier pieza</td>
-                                    <td>100.00</td>
-                                    <td>	III Nivel</td>
-                                    <td>	SUS</td>
-                                    <td> ANATOMOPATOLOGÍA
-                                    </td>
-                                    <td><button type="button" class="btn btn-outline-primary">Editar</button><button
-                                        type="button" style="margin-left: 18px;"
-                                        class="btn btn-outline-danger">Eliminar</button></td>
-
-
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Tinción papanicolau</td>
-                                    <td>28.00</td>
-                                    <td>II y III Nivel</td>
-                                    <td>SUS</td>
-                                    <td> ANATOMOPATOLOGÍA
-                                    </td>
-                                    <td><button type="button" class="btn btn-outline-primary">Editar</button><button
-                                        type="button" style="margin-left: 18px;"
-                                        class="btn btn-outline-danger">Eliminar</button></td>
-
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>Baciloscopía (incluye 2 tomas, tinción y lectura)</td>
-                                    <td>11.00</td>
-                                    <td>I, II y III Nivel</td>
-                                    <td>SUS</td>
-                                    <td> BACTERIOLOGÍA
- 
-                                    </td>
-                                    <td><button type="button" class="btn btn-outline-primary">Editar</button><button
-                                        type="button" style="margin-left: 18px;"
-                                        class="btn btn-outline-danger">Eliminar</button></td>
-
-
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td>Coprocultivo</td>
-                                    <td>	80.00</td>
-                                    <td>III Nivel</td>
-                                    <td>SUS</td>
-                                    <td> BACTERIOLOGÍA
- 
-                                    </td>
-                                    <td><button type="button" class="btn btn-outline-primary">Editar</button><button
-                                        type="button" style="margin-left: 18px;"
-                                        class="btn btn-outline-danger">Eliminar</button></td>
-
-
-                                </tr>
-                                <tr>
-                                    <th scope="row">6</th>
-                                    <td>Cultivo para gérmenes comunes y antibiograma</td>
-                                    <td>80.00</td>
-                                    <td>II y III Nivel</td>
-                                    <td>SUS</td>
-                                    <td> BACTERIOLOGÍA
- 
-                                    </td>
-                                    <td><button type="button" class="btn btn-outline-primary">Editar</button><button
-                                        type="button" style="margin-left: 18px;"
-                                        class="btn btn-outline-danger">Eliminar</button></td>
-
-                                </tr>
-                                <tr>
-                                    <th scope="row">7</th>
-                                    <td>Cultivo para tuberculosis</td>
-                                    <td>50.00</td>
-                                    <td>III Nivel</td>
-                                    <td>SUS</td>
-                                    <td> BACTERIOLOGÍA
- 
-                                    </td>
-                                    <td><button type="button" class="btn btn-outline-primary">Editar</button><button
-                                        type="button" style="margin-left: 18px;"
-                                        class="btn btn-outline-danger">Eliminar</button></td>
-
-
-                                </tr>
-                                <tr>
-                                    <th scope="row">8</th>
-                                    <td>Determinación de concentración inhibitoria mínima para ATB</td>
-                                    <td>50.00</td>
-                                    <td>II y III Nivel</td>
-                                    <td>SUS</td>
-                                    <td>  BACTERIOLOGÍA
-                                
-                                    </td>
-                                    <td><button type="button" class="btn btn-outline-primary">Editar</button><button
-                                        type="button" style="margin-left: 18px;"
-                                        class="btn btn-outline-danger">Eliminar</button></td>
-
-
-                                </tr>
-                                <tr>
-                                    <th scope="row">9</th>
-                                    <td>Diagnóstico de Bordetella</td>
-                                    <td>150.00</td>
-                                    <td>II y III Nivel</td>
-                                    <td>SUS</td>
-                                    <td> BACTERIOLOGÍA
-                                    </td>
-                                    <td><button type="button" class="btn btn-outline-primary">Editar</button><button
-                                        type="button" style="margin-left: 18px;"
-                                        class="btn btn-outline-danger">Eliminar</button></td>
-
-                                </tr>
-                                <tr>
-                                    <th scope="row">10</th>
-                                    <td>Frotis tinción Ghram</td>
-                                    <td>20.00</td>
-                                    <td>I, II y III Nivel</td>
-                                    <td>SUS</td>
-                                    <td> BACTERIOLOGÍA
- 
-                                    </td>
-                                    <td><button type="button" class="btn btn-outline-primary">Editar</button><button
-                                        type="button" style="margin-left: 18px;"
-                                        class="btn btn-outline-danger">Eliminar</button></td>
-
-
-                                </tr>
-                               
-                            </tbody>
-                        </table>
-                    </div>
                 </div>
-                </div>
-
             </div>
-
-        </div>
+        </section>
     </div>
-</section>
 </div>

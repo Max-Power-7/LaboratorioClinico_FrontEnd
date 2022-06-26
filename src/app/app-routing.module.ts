@@ -15,6 +15,7 @@ import { MainHeaderComponent } from './main-header/main-header.component';
 import { MainSidebarComponent } from './main-sidebar/main-sidebar.component';
 import { CommonModule } from '@angular/common';
 import { OrdenServicioComponent } from './components/orden-servicio/orden-servicio.component';
+import { InformacionComponent } from './components/informacion/informacion.component';
 
 const routes: Routes = [
 
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'laboratorista', component: LaboratoristaComponent },
   { path: 'servicios', component: ServiciosSaludComponent },
   { path: 'orden-servicio', component: OrdenServicioComponent },
+  { path: 'informacion', component: InformacionComponent },
   { path: '**', component: NotFound404Component },
 ];
 
