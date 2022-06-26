@@ -1,58 +1,39 @@
-<div class="wrapper">
-    <div class="content-wrapper">
+<div class="content-wrapper">
+  <div class="card bg-white">
+    <div class="card-body">
+      <span class="titulo">Listado de Orden Laboratorio</span>
+      <button routerLink="/crear-orden" class="btn btn-success float-end">
+        Nuevo
+      </button>
 
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>ID Orden</th>
+            <th>Nompre Paciente</th>
+            <th>EDAD</th>
+            <th>CI</th>
+            <th>SERVICIO</th>
+            <th>Fecha</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let orden of ordenArray">
+            <td>1</td>
+            <td>{{ orden.cliente }}</td>
+            <td>{{ orden.edad }}</td>
+            <td>{{ orden.ci }}</td>
+            <td>{{ orden.servicio }}</td>
+            <td>{{ orden.fecha }}</td>
 
-        <section class="content">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-
-
-
-
-
-
-
-                        <div class="card bg-white">
-                            <div class="card-body">
-                                <span class="titulo">Listado de Orden Laboratorio</span>
-                                <button routerLink="/crear-orden" class="btn btn-success float-end">Nuevo</button>
-
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>ID Orden</th>
-                                            <th> Nompre Paciente</th>
-                                            <th>Email</th>
-                                            <th>Medico</th>
-                                            <th>Fecha</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>
-                                                <br>paciente($orden->paciente_id)->paterno
-                                                <br>paciente($orden->paciente_id)->materno
-                                            </td>
-                                            <td>user(paciente($orden->paciente_id)->user_id)->email</td>
-                                            <td>Dr(a):medico($orden->medico_id)->nombre</td>
-                                            <td>$orden->fecha</td>
-                                            <td>$orden-></td>
-                                            <td>$orden-></td>
-                                            <td width="10px">
-                                                <a class="btn btn-success"></a>
-                                                <a class="btn btn-primary"></a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <td width="10px">
+              <a class="btn btn-success">editar</a>
+              <a class="btn btn-primary">eliminar</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+  </div>
 </div>

@@ -20,7 +20,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { CrearPacienteComponent } from './components/crear-paciente/crear-paciente.component';
 import { ListarPacienteComponent } from './components/listar-paciente/listar-paciente.component';
 
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 // Componentes de Jean Paul
@@ -57,6 +57,7 @@ import { InformacionComponent } from './components/informacion/informacion.compo
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

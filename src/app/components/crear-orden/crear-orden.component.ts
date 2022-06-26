@@ -1,11 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Orden } from 'src/app/models/orden';
+import { ListarOrdenComponent } from '../listar-orden/listar-orden.component';
 @Component({
   selector: 'app-crear-orden',
   templateUrl: './crear-orden.component.html',
   styleUrls: ['./crear-orden.component.css']
 })
 export class CrearOrdenComponent implements OnInit {
+  selectOrden:Orden=new Orden();
+  ordenArray:Orden[]=[{id: 1, cliente: "leonel chana",edad: 78,sexo:"",ci:"",medico:"",red:"",establecimiento:"",municipio:"",fecha:"",servicio:"HEMOGRAMA COMPLETO"}]
+ 
+ addOrEdit(){
+this.ordenArray.push(this.selectOrden);
+ }
+  orderFrom: FormGroup;
+  
 pacientes:Array<any>=[{id:1,nombre:"leonel",paterno:"chana",ci:"98"},
 {id:2,nombre:"miguel",paterno:"guardia",ci:"99"},
 {id:3,nombre:"lesly",paterno:"zarate",ci:"100"},];  
@@ -31,7 +41,11 @@ pacientes:Array<any>=[{id:1,nombre:"leonel",paterno:"chana",ci:"98"},
   
   
   
-  constructor() { }
+  constructor(private fb : FormBuilder) { 
+    this.orderFrom=this.fb.group({
+      cliente:['',Validators.required],
+    })
+  }
 
   ngOnInit(): void {
  
