@@ -16,6 +16,7 @@ import { MainSidebarComponent } from './main-sidebar/main-sidebar.component';
 import { CommonModule } from '@angular/common';
 import { ExamenComponent } from './components/examen/examen.component';
 import { CrearExamenComponent } from './components/crear-examen/crear-examen.component';
+import { OrdenServicioComponent } from './components/orden-servicio/orden-servicio.component';
 
 const routes: Routes = [
 
@@ -28,6 +29,7 @@ const routes: Routes = [
     {path: 'servicios', component: ServiciosSaludComponent },
     {path: 'examen', component: ExamenComponent },
     {path: 'crear-examen', component: CrearExamenComponent },
+    {path: 'orden-servicio', component: OrdenServicioComponent },
     
     //{path: '**', redirectTo: '', pathMatch: 'full'},
 
