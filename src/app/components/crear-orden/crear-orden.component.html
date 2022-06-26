@@ -32,26 +32,28 @@
               <div class="col">
                 <div class="input-group input-group-lg">
                   <span class="input-group-text">Red</span>
-                  <select
-                    name="red_id"
-                    id="red_id"
+                  <input
+                    type="text"
+                    name="fecha_solicitud"
+                    id="fecha_solicitud"
                     class="form-control bg-white"
-                  >
-                    <option value="red->id}}">red->nombre}}</option>
-                  </select>
+                    value=""
+                    placeholder="Introdusca la Red"
+                  />
                 </div>
               </div>
 
               <div class="col">
                 <div class="input-group input-group-lg">
                   <span class="input-group-text">Municipio</span>
-                  <select
-                    name="municipio_id"
-                    id="municipio_id"
+                  <input
+                    type="text"
+                    name="fecha_solicitud"
+                    id="fecha_solicitud"
                     class="form-control bg-white"
-                  >
-                    <option value="municipio->id}}">municipio->nombre}}</option>
-                  </select>
+                    value=""
+                    placeholder="Introdusca el Municipio"
+                  />
                 </div>
               </div>
             </div>
@@ -59,26 +61,24 @@
               <div class="col">
                 <div class="input-group input-group-lg">
                   <span class="input-group-text" for="">Establecimiento</span>
-                  <select
-                    name="establecimiento_id"
-                    id="establecimiento_id"
+                  <input
+                    type="text"
+                    name="fecha_solicitud"
+                    id="fecha_solicitud"
                     class="form-control bg-white"
-                  >
-                    <option value="establecimiento->id}}">
-                      establecimiento->nombre}}
-                    </option>
-                  </select>
+                    value=""
+                    placeholder="Introdusca el Establecimiento"
+                  />
                 </div>
               </div>
               <div class="col">
                 <div class="input-group input-group-lg">
                   <span class="input-group-text">Fecha de solicitud</span>
                   <input
-                    type="text"
+                    type="date"
                     name="fecha_solicitud"
                     id="fecha_solicitud"
                     class="form-control bg-white"
-                    value="mytime}}"
                   />
                 </div>
               </div>
@@ -89,10 +89,11 @@
                   <span class="input-group-text">Nro Registro</span>
                   <input
                     type="text"
-                    name="numero_registro"
-                    id="numero_registro"
+                    name="fecha_solicitud"
+                    id="fecha_solicitud"
                     class="form-control bg-white"
-                    size="40"
+                    value=""
+                    placeholder="Introdusca el Nro Registro"
                   />
                 </div>
               </div>
@@ -101,25 +102,40 @@
                   <span class="input-group-text">Edad</span>
                   <input
                     type="text"
+                    name="fecha_solicitud"
+                    id="fecha_solicitud"
+                    class="form-control bg-white"
+                    value=""
+                    placeholder="Introdusca la Edad"
+                  />
+                  <!-- <input
+                    type="text"
                     name="edad"
                     id="edad"
                     class="form-control bg-white"
                     size="12"
                     placeholder="Edad"
                     [(ngModel)]="selectOrden"
-                  />
+                  /> -->
                 </div>
               </div>
               <div class="col">
                 <div class="input-group input-group-lg">
                   <span class="input-group-text">Sexo</span>
-                  <input
-                    type="text"
-                    name="sexo"
-                    id="sexo"
+                  <select
+                    name="paciente_id"
+                    id="paciente_id"
                     class="form-control bg-white"
-                    size="12"
-                  />
+                  ><option value="">
+                    Selecione el genero
+                  </option>
+                    <option value="">
+                      MASCULINO
+                    </option>
+                    <option value="">
+                      FEMENINO  
+                    </option>
+                  </select>
                 </div>
               </div>
             </div>
@@ -151,6 +167,7 @@
                     id="ci"
                     class="form-control bg-white"
                     size="40"
+                    placeholder="Celula de Identidad"
                   />
                 </div>
               </div>
@@ -158,17 +175,19 @@
             <div class="row mb-3">
               <div class="col">
                 <div class="input-group input-group-lg">
-                  <span class="input-group-text">medico_id clinico</span>
+                  <span class="input-group-text"> Medico</span>
                   <input
                     type="text"
                     name="diagnostico"
                     id="diagnostico"
                     class="form-control bg-white"
+                    placeholder="Medico "
                   />
                 </div>
               </div>
-              <div class="col">
-                <div class="input-group input-group-lg">
+              <div class="col text-center">
+                <button routerLink="/orden" class="btn btn-danger">cancelar Orden de Laboratorio</button>
+             <!--    <div class="input-group input-group-lg">
                   <span class="input-group-text">Medico Solicitante:</span>
                   <select
                     name="medico_id"
@@ -179,7 +198,7 @@
                       medico->nombre}} medico->paterno}} medico->materno}}
                     </option>
                   </select>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -323,13 +342,18 @@
           </div>
         </div>
         <div>
-         
-        <button type="submit" class="btn btn-primary form-control">Guardar</button>
-        <button routerLink="/orden" type="submit" class="btn btn-primary form-control">Cancelar</button>
-        
-      </div>
+          <button type="submit" class="btn btn-primary form-control">
+            Guardar
+          </button>
+          <button
+            routerLink="/orden"
+            type="submit"
+            class="btn btn-primary form-control"
+          >
+            Cancelar
+          </button>
+        </div>
       </form>
-   
     </div>
   </div>
 </div>
