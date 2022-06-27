@@ -30,6 +30,10 @@ import { NotFound404Component } from './components/not-found404/not-found404.com
 
 import { OrdenServicioComponent } from './components/orden-servicio/orden-servicio.component';
 
+//Componente Luis
+import { PacienteCrearComponent } from './components/paciente-crear/paciente-crear.component';
+import { PacienteListarComponent } from './components/paciente-listar/paciente-listar.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +49,9 @@ import { OrdenServicioComponent } from './components/orden-servicio/orden-servic
     ServiciosSaludComponent,
     LaboratoristaComponent,
     OrdenServicioComponent,
-    NotFound404Component
+    NotFound404Component,
+    PacienteCrearComponent,
+    PacienteListarComponent
   ],
   imports: [
     BrowserModule,

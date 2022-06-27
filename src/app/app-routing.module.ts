@@ -15,6 +15,8 @@ import { MainHeaderComponent } from './main-header/main-header.component';
 import { MainSidebarComponent } from './main-sidebar/main-sidebar.component';
 import { CommonModule } from '@angular/common';
 import { OrdenServicioComponent } from './components/orden-servicio/orden-servicio.component';
+import { PacienteCrearComponent } from './components/paciente-crear/paciente-crear.component';
+import { PacienteListarComponent } from './components/paciente-listar/paciente-listar.component';
 
 const routes: Routes = [
 
@@ -26,6 +28,9 @@ const routes: Routes = [
   { path: 'laboratorista', component: LaboratoristaComponent },
   { path: 'servicios', component: ServiciosSaludComponent },
   { path: 'orden-servicio', component: OrdenServicioComponent },
+  { path: 'paciente', component: PacienteListarComponent },
+  { path: 'paciente-crear', component: PacienteCrearComponent },
+  { path: 'paciente-editar/:id', component: PacienteCrearComponent },
   { path: '**', component: NotFound404Component },
 ];
 
