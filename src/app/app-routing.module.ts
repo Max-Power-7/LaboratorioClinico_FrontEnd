@@ -18,6 +18,8 @@ import { CrearExamenComponent } from './components/crear-examen/crear-examen.com
 import { OrdenServicioComponent } from './components/orden-servicio/orden-servicio.component';
 import { InformacionComponent } from './components/informacion/informacion.component';
 import { NotFound404Component } from './components/not-found404/not-found404.component';
+import { PacienteCrearComponent } from './components/paciente-crear/paciente-crear.component';
+import { PacienteListarComponent } from './components/paciente-listar/paciente-listar.component';
 
 const routes: Routes = [
 
@@ -32,6 +34,9 @@ const routes: Routes = [
   { path: 'crear-examen', component: CrearExamenComponent },
   { path: 'orden-servicio', component: OrdenServicioComponent },
   { path: 'informacion', component: InformacionComponent },
+  { path: 'paciente', component: PacienteListarComponent },
+  { path: 'paciente-crear', component: PacienteCrearComponent },
+  { path: 'paciente-editar/:id', component: PacienteCrearComponent },
   { path: '**', component: NotFound404Component },
 ];
 

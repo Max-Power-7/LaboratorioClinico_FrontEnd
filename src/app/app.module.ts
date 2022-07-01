@@ -33,6 +33,10 @@ import { InformacionComponent } from './components/informacion/informacion.compo
 import { ExamenComponent } from './components/examen/examen.component';
 import { CrearExamenComponent } from './components/crear-examen/crear-examen.component';
 
+//Componente Luis
+import { PacienteCrearComponent } from './components/paciente-crear/paciente-crear.component';
+import { PacienteListarComponent } from './components/paciente-listar/paciente-listar.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +55,9 @@ import { CrearExamenComponent } from './components/crear-examen/crear-examen.com
     NotFound404Component,
     InformacionComponent,
     ExamenComponent,
-    CrearExamenComponent
+    CrearExamenComponent,
+    PacienteCrearComponent,
+    PacienteListarComponent
   ],
   imports: [
     BrowserModule,
