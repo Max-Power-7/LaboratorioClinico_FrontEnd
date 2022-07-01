@@ -17,9 +17,6 @@ import { ListarOrdenComponent } from './components/listar-orden/listar-orden.com
 import { CrearOrdenComponent } from './components/crear-orden/crear-orden.component';
 import { AppRoutingModule } from './app-routing.module';
 
-import { CrearPacienteComponent } from './components/crear-paciente/crear-paciente.component';
-import { ListarPacienteComponent } from './components/listar-paciente/listar-paciente.component';
-
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -45,8 +42,6 @@ import { PacienteListarComponent } from './components/paciente-listar/paciente-l
     ContentWrapperComponent,
     ControlSidebarComponent,
     MainFooterComponent,
-    CrearPacienteComponent,
-    ListarPacienteComponent,
     ListarOrdenComponent,
     CrearOrdenComponent,
     ServiciosSaludComponent,
