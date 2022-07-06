@@ -18,6 +18,7 @@ import { InformacionComponent } from './components/informacion/informacion.compo
 import { NotFound404Component } from './components/not-found404/not-found404.component';
 import { PacienteCrearComponent } from './components/paciente-crear/paciente-crear.component';
 import { PacienteListarComponent } from './components/paciente-listar/paciente-listar.component';
+import { EditarExamenComponent } from './editar-examen/editar-examen.component';
 
 const routes: Routes = [
 
@@ -35,7 +36,9 @@ const routes: Routes = [
   { path: 'paciente', component: PacienteListarComponent },
   { path: 'paciente-crear', component: PacienteCrearComponent },
   { path: 'paciente-editar/:id', component: PacienteCrearComponent },
+  { path: 'editar-examen', component: EditarExamenComponent },
   { path: '**', component: NotFound404Component },
+  
 ];
 
 @NgModule({

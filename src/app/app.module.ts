@@ -33,6 +33,7 @@ import { CrearExamenComponent } from './components/crear-examen/crear-examen.com
 //Componente Luis
 import { PacienteCrearComponent } from './components/paciente-crear/paciente-crear.component';
 import { PacienteListarComponent } from './components/paciente-listar/paciente-listar.component';
+import { EditarExamenComponent } from './editar-examen/editar-examen.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { PacienteListarComponent } from './components/paciente-listar/paciente-l
     ExamenComponent,
     CrearExamenComponent,
     PacienteCrearComponent,
-    PacienteListarComponent
+    PacienteListarComponent,
+    EditarExamenComponent
   ],
   imports: [
     BrowserModule,
